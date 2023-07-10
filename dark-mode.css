@@ -1,0 +1,28 @@
+.dark-mode .user-list {
+  background-color: #1c1c24;
+}
+
+.dark-mode .user-list__title {
+  color: #fafafb;
+}
+
+.dark-mode .user-list__name {
+  color: #fafafb;
+}
+
+.dark-mode .user-list__action._mail path {
+  fill: #b5b5be;
+}
+
+.dark-mode .user-list__action._deny path {
+  fill: #696974;
+}
+
+.dark-mode .user-list__footer {
+  border-top: 1px solid #44444f;
+}
+
+.dark-mode .user-list__more span {
+  color: #fafafb;
+  font-weight: 600;
+}

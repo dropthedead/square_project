@@ -1,7 +1,9 @@
 html {
   font-family: "Poppins", sans-serif;
-  background-color: #cccccc;
+  background-color: #e26230;
+  -webkit-font-smoothing: antialiased;
 }
+
 p {
   font-family: "Roboto", sans-serif;
 }
@@ -10,19 +12,14 @@ p {
   width: 410px;
   background-color: #ffffff;
   border-radius: 20px;
-  margin: 50px auto 0;
-}
 
-.dark-mode .user-list {
-  background-color: #1c1c24;
-}
-.dark-mode .user-list__title {
-  color: #fafafb;
+  margin: 50px auto 0;
 }
 
 .user-list__header {
   padding: 25px 25px 19px;
 }
+
 .user-list__title {
   font-weight: 600;
   font-size: 16px;
@@ -30,24 +27,29 @@ p {
   color: #171725;
   margin: 0;
 }
+
 .user-list__item {
   height: 72px;
   padding: 0 25px;
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
 }
+
 .user-list__avatar {
   width: 42px;
   height: 42px;
   border-radius: 50%;
   overflow: hidden;
 }
+
 .user-list__avatar img {
   display: block;
   width: 100%;
 }
+
 .user-list__name {
   font-size: 14px;
   color: #171725;
@@ -55,9 +57,7 @@ p {
   letter-spacing: 0.1px;
   margin: 0;
 }
-.dark-mode .user-list__name {
-  color: #fafafb;
-}
+
 .user-list__descr {
   font-size: 12px;
   color: #92929d;
@@ -67,38 +67,46 @@ p {
 
 .user-list__action {
   border: none;
-  background-color: none;
+  background: none;
   margin: 0px;
   padding: 0px;
 }
+
 .user-list__action svg {
   display: block;
 }
+
+.user-list__action path {
+  fill: #92929d;
+}
+
 .user-list__action._deny {
   margin-left: 20px;
 }
-.dark-mode .user-list__action._mail path {
-  fill: #b5b5be;
-}
+
 .user-list__left {
   display: flex;
   flex-direction: row;
   gap: 15px;
+  align-items: center;
 }
+
 .user-list__footer {
   border-top: 1px solid #f1f1f5;
   height: 57px;
 }
+
 .user-list__more {
   text-decoration: none;
 
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.user-list__more span {
-  display: block;
+
   height: 100%;
+}
+
+.user-list__more span {
   color: #0062ff;
   font-size: 12px;
   font-weight: 500;
